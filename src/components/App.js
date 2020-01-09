@@ -1,11 +1,11 @@
 import React from 'react';
 
 import './Styles/App.scss';
-import SignUpBox from './SignUpBox';
+import SignInForm from './SignInForm';
 
 function App() {
   return (
-    <SignUpBox></SignUpBox>
+    <SignInForm></SignInForm>
   );
 }
 
