@@ -4,13 +4,12 @@ import "./Styles/SignUpForm.scss";
 import googleIcon from "../static/images/icons/Google.svg" ;
 import facebookIcon from "../static/images/icons/Facebook.svg" ;
 
-import LoginContainer from "./LoginContainer"
 
 class SignUpForm extends React.Component {
   render() {
 
     return (
-      <LoginContainer>
+
            <div className="signUp">
         <div className="signUp__container">
           <h1>Regístrate</h1>
@@ -53,7 +52,7 @@ class SignUpForm extends React.Component {
         </div>
       </div>
 
-      </LoginContainer> 
+
     );
   }
 }

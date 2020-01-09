@@ -1,0 +1,4 @@
+@mixin genericBackgroundBox {
+    background-color: $background-opacity;
+    border-radius: $box-border-radious;
+}

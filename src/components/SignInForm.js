@@ -4,13 +4,10 @@ import "./Styles/SignInForm.scss";
 import googleIcon from "../static/images/icons/Google.svg" ;
 import facebookIcon from "../static/images/icons/Facebook.svg" ;
 
-import LoginContainer from "./LoginContainer"
-
 class SignInForm extends React.Component {
   render() {
 
     return (
-      <LoginContainer>
  <div className="signIn">
             <div className="signIn__container">
                 <h1>Inicia Sesión</h1>
@@ -38,7 +35,6 @@ class SignInForm extends React.Component {
                 </div>
             </div>
         </div>
-      </LoginContainer> 
     );
   }
 }
