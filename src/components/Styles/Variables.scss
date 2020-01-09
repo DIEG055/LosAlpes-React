@@ -1,0 +1,41 @@
+@import "./fonts";
+
+@include font('OpenSans-Light', '../../static/Fonts/OpenSans-Light');
+@include font('OpenSans-Regular', '../../static/Fonts/OpenSans-Regular');
+@include font('OpenSans-SemiBold', '../../static/Fonts/OpenSans-SemiBold');
+@include font('OpenSans-Bold', '../../static/Fonts/OpenSans-Bold');
+
+$font-family: (
+    'light': OpenSans-Light,
+    'regular': OpenSans-Regular,
+    'semiBold': OpenSans-SemiBold,
+    'bold': OpenSans-Bold,
+);
+
+$font-size: (
+    'smaller': 12px,
+    'small': 16px,
+    'medium': 20px,
+    'large': 24px,
+    'larger': 28px,
+);
+
+$main-color:#FFA710;
+$transparent-color:transparent;
+$font-color: #707070;
+$white: #f8f8f8;
+$main-opacity: 0.7;
+$background-opacity: rgba(255,255,255,$main-opacity);
+
+$light-font: map-get($font-family , 'light' );
+$regular-font: map-get($font-family , 'regular' );
+$semibold-font: map-get($font-family , 'semiBold' );
+$bold-font: map-get($font-family , 'bold' );
+
+$button-border-radious: 7px;
+$box-border-radious: 7px;
+$input-border-radious: 7px;
+
+$navbar-height: 8vh;
+
+

@@ -1,0 +1,21 @@
+<svg id="Component_7_1" data-name="Component 7 – 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_66" data-name="Rectangle 66" width="50" height="50" transform="translate(1082 499)" fill="#41c297" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_2" data-name="Mask Group 2" transform="translate(-1082 -499)" clip-path="url(#clip-path)">
+    <g id="Cattle" transform="translate(1082 499)">
+      <g id="Group_112" data-name="Group 112">
+        <g id="Group_111" data-name="Group 111">
+          <path id="Path_21" data-name="Path 21" d="M49.794,17.064l-4.237-4.907a.848.848,0,0,0-.642-.293H33.05a.846.846,0,0,0-.268.043l-4.817,1.606L23.149,11.9a.847.847,0,0,0-.268-.039H20.338a.847.847,0,0,0,.8-.58l.847-2.542a.847.847,0,0,0-.8-1.115H.847a.847.847,0,0,0-.8,1.115l.847,2.542a.847.847,0,0,0,.8.58h3.04L6.466,23.431a.847.847,0,0,0,.838.722H12.8l4.945,17.6a.847.847,0,0,0,.818.618h3.475a.847.847,0,0,0,.847-.847V33.041L40.9,32.821l.393,1.319a.848.848,0,0,0,.151.289l2.542,3.158v3.938a.847.847,0,0,0,.847.847H48.3a.847.847,0,0,0,.847-.817L50,17.649A.847.847,0,0,0,49.794,17.064ZM2.305,10.17l-.282-.847H4.354l.127.847Zm15.374-.847H20.01l-.282.847H17.552ZM8.034,22.458,6.068,9.322h9.9l-.49,3.264L14,22.458Zm39.453,18.22H45.677v-3.39a.853.853,0,0,0-.186-.531L42.864,33.5l-.529-1.772a.847.847,0,0,0-.81-.606h-.01l-19.492.237a.847.847,0,0,0-.837.847v8.475H19.2L14.558,24.153h.169a.847.847,0,0,0,.838-.722l1.479-9.871h5.7L27.7,15.211a.847.847,0,0,0,.536,0l4.954-1.652H44.527l3.766,4.361Z" fill="#41c297"/>
+        </g>
+      </g>
+      <g id="Group_114" data-name="Group 114">
+        <g id="Group_113" data-name="Group 113">
+          <rect id="Rectangle_67" data-name="Rectangle 67" width="1.695" height="4.192" transform="translate(39.207 25.782) rotate(-10.131)" fill="#41c297"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

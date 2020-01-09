@@ -1,0 +1,51 @@
+.form__item {
+    margin: 10px 0;
+    label {
+      display: block;
+      color: $font-color;
+      font-family: $regular-font;
+      font-size: map-get($font-size, "small");
+      margin-bottom: 2px;
+    }
+    input {
+      display: block;
+      width: 100%;
+      border-radius: $input-border-radious;
+      height: 45px;
+      margin: 0;
+      padding: 0;
+      margin-bottom: 10px;
+      padding-left: 10px;
+      border: none;
+      font-family: $regular-font;
+    }
+  }
+  
+  .form__button {
+    text-align: center;
+    button {
+      border: none;
+      padding: 15px;
+      border-radius: $button-border-radious;
+      background-color: $main-color;
+      font-family: $bold-font;
+      color: $white;
+      margin: 20px;
+      font-size: map-get($font-size, "medium");
+    }
+  }
+
+  .form__button__signIn{
+    @extend .form__button;
+    button {
+      margin: 25px;
+      padding: 15px 25px ;
+    }
+  }
+  .form__button__filter{
+    @extend .form__button;
+    button {
+      margin: 25px;
+      padding: 10px 15px ;
+    }
+  }
