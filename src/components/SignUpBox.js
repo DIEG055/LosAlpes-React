@@ -38,7 +38,7 @@ class SignUpBox extends React.Component {
               </div>
             </form>
             <div className="redirectSignIn">
-              Ya tienes una cuenta? <a href="">Inicia Sesion</a>
+              Ya tienes una cuenta? <a href="">Inicia Sesión</a>
             </div>
             <div className="SignIn__SocialMedia">
               <div className="socialGoogle">
