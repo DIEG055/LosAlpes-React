@@ -1,15 +1,15 @@
 import React from 'react'
 
-import LoginContainer from "../components/LoginLayout"
+import LoginLayout from "../components/LoginLayout"
 import SignInForm from "../components/SignInForm"
 
 function SignIn (props) {
     return (
-        <LoginContainer>
+        <LoginLayout>
             <SignInForm>
 
             </SignInForm>
-        </LoginContainer>
+        </LoginLayout>
     )
 }
 

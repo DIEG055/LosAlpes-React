@@ -1,0 +1,39 @@
+@import "../../static/scss/Variables";
+
+table{
+    border-collapse: separate;
+    width: 100%;
+    border-spacing:  0 10px;
+
+}
+
+th , td {
+    background-color: white;
+    text-align: center;
+    color: $font-color;
+    -webkit-box-shadow: 6px 13px 7px 0px rgba(0,0,0,0.12);
+    -moz-box-shadow: 6px 13px 7px 0px rgba(0,0,0,0.12);
+    box-shadow: 6px 13px 7px 0px rgba(0,0,0,0.12);
+   
+}
+
+.table__header--borderLeft{
+    border-radius: $box-border-radious 0 0 $box-border-radious;  
+}
+
+.table__header--borderRight{
+    border-radius: 0 $box-border-radious  $box-border-radious 0;  
+}
+
+th{
+    font-family: $bold-font;
+    padding: 12px;
+    font-size: map-get($font-size , 'small' );
+}
+
+td{
+    font-family: $regular-font;
+    padding: 7px;
+    font-size: map-get($font-size , 'smaller' );
+}
+  

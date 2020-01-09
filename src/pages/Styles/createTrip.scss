@@ -1,0 +1,93 @@
+@import "../../static/scss/Variables";
+@import "../../static/scss/mixins";
+@import "../../components/Styles/SignUpForm";
+
+.tripDetails {
+    @extend .signUp;
+    margin-top: $navbar-height;
+    grid-template-rows: repeat(10, 10%);
+    grid-template-columns: repeat(10, 1fr);
+  }
+  
+  .tripDetails__container {
+    @extend .signUp__container;
+    grid-column: 1/4;
+    grid-row: 1 / -1;
+    h1{
+        padding-top: 25px;
+        margin: 0;
+    }
+  }
+  
+  .tripsDetails__Data{
+      grid-column: 5/10;
+      margin-top: 25px;
+  }
+  
+  .tripDetails__amount{
+      grid-column: 6  /10;
+      grid-row: 5;
+      align-self: center; 
+      margin: 0 35px;
+      @include genericBackgroundBox;
+      background-color: $white;
+    //   height: 300px;
+      padding: 25px;
+      h5{
+          text-align: center;
+          font-family: $regular-font;
+          color: $font-color;
+          font-size: map-get($font-size, "small");
+          margin: 25px;
+  
+      }
+  }
+  
+  .tripDetails__amount__selector{
+      display: flex;
+      justify-content: center;
+      input {
+          display: block;
+          width: 20%;
+          border-radius: $input-border-radious;
+          height: 45px;
+          margin: 0;
+          padding: 0;
+          margin-bottom: 10px;
+          padding-left: 10px;
+          border: 1px solid $main-color;
+          font-family: $regular-font;
+        }
+        i{
+            padding-right: 25px;
+        }
+  }
+  
+  .tripDetails__info{
+      margin: 25px 0;
+      text-align: center;
+      h6{
+          font-family: $bold-font;
+          font-size: map-get($font-size , 'medium' );
+          color: $font-color;
+          margin: 10px 0 3px ;
+      }
+      p{
+          font-family: $regular-font;
+          font-size: map-get($font-size , 'small' );
+          color: $font-color;
+          // margin: 25px 0 ;
+      }
+  
+  }
+  
+  .tripDetails__cattleInfo{
+      margin: 20px;
+      a{
+          text-decoration: none;
+      color: $main-color  ;
+      font-family: $regular-font;
+      }
+  }
+  
+  

@@ -1,7 +1,7 @@
 import React from 'react'
 
 import "./Styles/styles.scss";
-function LoginContainer(props){
+function LoginLayout(props){
     return (
         <section className="loginBackground">
             { props.children }
@@ -9,4 +9,4 @@ function LoginContainer(props){
     )
 }
 
-export default LoginContainer;
+export default LoginLayout;

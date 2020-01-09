@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import CreateTrip from './pages/CreateTrip';
 
-import Home from './pages/Home';
 
-
-ReactDOM.render(<Home />, document.getElementById('root'));
+ReactDOM.render(<CreateTrip />, document.getElementById('root'));
