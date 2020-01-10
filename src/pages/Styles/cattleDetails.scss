@@ -1,0 +1,9 @@
+@import "../../static/scss/Variables";
+@import "./tripDetails";
+@import "../../components/Styles/trips";
+
+.cattleDetails{
+    @extend .tripDetails;
+}
+
+

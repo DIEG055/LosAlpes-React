@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import CreateTrip from './pages/CreateTrip';
+import CattleDetails from './pages/CattleDetails';
 
 
-ReactDOM.render(<CreateTrip />, document.getElementById('root'));
+ReactDOM.render(<CattleDetails/>, document.getElementById('root'));

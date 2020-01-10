@@ -1,7 +1,7 @@
 import React from "react";
 import MainLayout from "../components/MainLayout";
 import "./Styles/trips.scss";
-import "./Styles/styles.scss";
+// import "./Styles/styles.scss";
 import newButton from "../static/images/svgs/New.svg";
 import TripsTable from "../components/TripsTable";
 import TripsFilter from "../components/TripsFilter";

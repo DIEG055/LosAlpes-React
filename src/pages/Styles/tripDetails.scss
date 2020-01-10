@@ -1,0 +1,14 @@
+@import "../../static/scss/Variables";
+@import "../../components/Styles/SignUpForm";
+
+.tripDetails {
+    @extend .signUp;
+    margin-top: $navbar-height;
+    grid-template-rows: repeat(10, 10%);
+    grid-template-columns: repeat(10, 1fr);
+  }
+
+.tripsDetails__Data{
+    grid-column: 5/10;
+    margin-top: 25px;
+}
