@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import MainLayout from "../components/MainLayout";
 import "./Styles/home.scss";
@@ -20,43 +21,54 @@ function Home(props) {
         </div>
       </section>
       <section className="home__options">
-        <div className="optionContainer">
-          <div className="option">
-            <img src={truck} alt="" />
-            <h6>Crear Viaje</h6>
+        <Link to="/trips/add">
+          <div className="optionContainer">
+            <div className="option">
+              <img src={truck} alt="" />
+              <h6>Crear Viaje</h6>
+            </div>
           </div>
-        </div>
-        <div className="optionContainer">
+        </Link>
+       <Link to="/cattle/add">
+       <div className="optionContainer">
           <div className="option">
             <img src={addCattle} alt="" />
             <h6>Añadir Ganado</h6>
           </div>
         </div>
+       </Link>
+        <Link to="/home">
         <div className="optionContainer">
           <div className="option">
             <img src={farm2} alt="" />
             <h6>Finca</h6>
           </div>
-        </div>
-        <div className="optionContainer">
+        </div>  
+        </Link>
+         <Link to="/trip">
+         <div className="optionContainer">
           <div className="option">
             <img src={truck2} alt="" />
             <h6>Ver Viajes</h6>
           </div>
         </div>
+         </Link>
+        <Link to="/home" >
         <div className="optionContainer">
           <div className="option">
             <img src={vaccination} alt="" />
             <h6>Vacunación</h6>
           </div>
         </div>
-        <div className="optionContainer">
+       </Link>
+       <Link to="/cattle">
+       <div className="optionContainer">
           <div className="option">
             <img src={cattle} alt="" />
             <h6>Ver Ganado</h6>
           </div>
         </div>
-      </section>
+      </Link></section>
     </MainLayout>
   );
 }

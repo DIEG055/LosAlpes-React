@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 import "./Styles/SignInForm.scss";
 import googleIcon from "../static/images/icons/Google.svg" ;
@@ -23,7 +24,7 @@ class SignInForm extends React.Component {
                     <div className="form__button__signIn"><button>Iniciar</button></div>
                 </form>
                 <div className="redirectSignIn">
-                    No tienes una cuenta? <a href="#">Registrate</a>
+                    No tienes una cuenta? <Link to="/signup"> Registrate</Link>
                 </div>
                 <div className="SignIn__SocialMedia">
                     <div className="socialGoogle">

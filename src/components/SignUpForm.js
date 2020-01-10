@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 import "./Styles/SignUpForm.scss";
 import googleIcon from "../static/images/icons/Google.svg" ;
@@ -39,7 +40,7 @@ class SignUpForm extends React.Component {
             </div>
           </form>
           <div className="redirectSignIn">
-            Ya tienes una cuenta? <a href="">Inicia Sesión</a>
+            Ya tienes una cuenta? <Link to="/signin "> Inicia Sesión</Link>
           </div>
           <div className="SignIn__SocialMedia">
             <div className="socialGoogle">
