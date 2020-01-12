@@ -1,46 +1,50 @@
-import React, { useState } from 'react'
+import React from "react";
 import "./Styles/forms.scss";
+import { useForm } from "react-hook-form";
 
-function CreateTripForm (props){
+function CreateTripForm() {
+   const { register, handleSubmit, errors } = useForm();
+  const onSubmit = data => {
+    console.log(data);
+  };
 
-  const [form, setform] = useState(
-    {}
-  )
-
-    return (
-        
-        <form action="">
-          <div class="form__item">
-            <label for="Date">Fecha</label>
-            <input type="date" name="date" required/>
-          </div>
-          <div class="form__item">
-            <label for="type">Tipo</label>
-            <input type="text" name="type" required />
-          </div>
-          <div class="form__item">
-            <label for="Amount">Cantidad</label>
-            <input type="text" name="amount" required />
-          </div>
-          <div class="form__item">  
-            <label for="Dealer">Negociante</label>
-            <input type="text" name="dealer" required />
-          </div>
-          <div class="form__item">
-            <label for="place">lugar</label>
-            <input type="text" name="palce" required />
-          </div>
-          <div class="form__item">
-            <label for="Price">Precio</label>
-            <input type="text" name="price" required />
-          </div>
-          <div class="form__button">
-            <button>Crear</button>
-          </div>
-        </form>
-
-
-    )
+  return (
+    <form onSubmit={handleSubmit(onSubmit)}>
+      <div className="form__item">
+        <label>Fecha</label>
+        <input type="date" name="date" ref={register({ required: true })} />
+        {/* {errors.date && <span>This field is required</span>} */}
+      </div>
+      <div className="form__item">
+        <label>Tipo</label>
+        <input type="text" name="type" ref={register({ required: true })} />
+        {/* {errors.type && <span>This field is required</span>} */}
+      </div>
+      <div className="form__item">
+        <label>Cantidad</label>
+        <input type="text" name="amount" ref={register({ required: true })} />
+        {/* {errors.amount && <span>This field is required</span>} */}
+      </div>
+      <div className="form__item">
+        <label>Negociante</label>
+        <input type="text" name="dealer" ref={register({ required: true })} />
+        {/* {errors.dealer && <span>This field is required</span>} */}
+      </div>
+      <div className="form__item">
+        <label>lugar</label>
+        <input type="text" name="place" ref={register({ required: true })} />
+        {/* {errors.place && <span>This field is required</span>} */}
+      </div>
+      <div className="form__item">
+        <label>Precio</label>
+        <input type="text" name="price" ref={register({ required: true })} />
+        {/* {errors.price && <span>This field is required</span>} */}
+      </div>
+      <div className="form__button">
+        <button type="submit">Crear</button>
+      </div>
+    </form>
+  );
 }
 
 export default CreateTripForm;

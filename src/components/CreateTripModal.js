@@ -5,23 +5,23 @@ import "./Styles/buttons.scss";
 
 function CreateTripModal(props) {
   return (
-    <div class="tripDetails__amount">
+    <div className="tripDetails__amount">
       <h5>Elige la cantidad de Machos y Hembras</h5>
-      <div class="tripDetails__amount__option">
-        <div class="tripDetails__amount__selector">
+      <div className="tripDetails__amount__option">
+        <div className="tripDetails__amount__selector">
           <i>
             <img src= { male } alt="" />
           </i>
           <input type="text" />
         </div>
-        <div class="tripDetails__amount__selector">
+        <div className="tripDetails__amount__selector">
           <i>
             <img src= { female } alt="" />
           </i>
           <input type="text" />
         </div>
       </div>
-      <div class="confirmButton">
+      <div className="confirmButton">
         <button>Guardar</button>
       </div>
     </div>

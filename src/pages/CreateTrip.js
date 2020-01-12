@@ -7,8 +7,8 @@ import CreateTripModal from "../components/CreateTripModal";
 function CreateTrip(props) {
   return (
     <MainLayout>
-      <div class="tripDetails">
-        <div class="tripDetails__container">
+      <div className="tripDetails">
+        <div className="tripDetails__container">
           <h1>Crea un Viaje</h1>
           <CreateTripForm></CreateTripForm>
         </div>
