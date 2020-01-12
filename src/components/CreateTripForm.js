@@ -1,33 +1,38 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Styles/forms.scss";
 
 function CreateTripForm (props){
+
+  const [form, setform] = useState(
+    {}
+  )
+
     return (
         
         <form action="">
           <div class="form__item">
             <label for="Date">Fecha</label>
-            <input type="date" />
+            <input type="date" name="date" required/>
           </div>
           <div class="form__item">
-            <label for="type">Type</label>
-            <input type="text" />
+            <label for="type">Tipo</label>
+            <input type="text" name="type" required />
           </div>
           <div class="form__item">
             <label for="Amount">Cantidad</label>
-            <input type="text" />
+            <input type="text" name="amount" required />
           </div>
-          <div class="form__item">
+          <div class="form__item">  
             <label for="Dealer">Negociante</label>
-            <input type="text" />
+            <input type="text" name="dealer" required />
           </div>
           <div class="form__item">
             <label for="place">lugar</label>
-            <input type="text" />
+            <input type="text" name="palce" required />
           </div>
           <div class="form__item">
             <label for="Price">Precio</label>
-            <input type="text" />
+            <input type="text" name="price" required />
           </div>
           <div class="form__button">
             <button>Crear</button>
