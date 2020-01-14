@@ -1,18 +1,11 @@
 import React from "react";
-import useSignUpForm from "../customHooks/forms/useSignUpForm";
 import { Link } from "react-router-dom";
 import "./Styles/SignUpForm.scss";
 import googleIcon from "../static/images/icons/Google.svg";
 import facebookIcon from "../static/images/icons/Facebook.svg";
 
-const SignUpForm = () => {
-  const signup = () => {
-    console.log(inputs);
-    // Se envian los datos a la API
-  }
-
-  const { inputs, handleInputChange, handleSubmit } = useSignUpForm(signup);
-
+const SignUpForm = props => {
+  const { inputs, handleInputChange, handleSubmit } = props;
 
   return (
     <div className="signUp">
@@ -20,57 +13,57 @@ const SignUpForm = () => {
         <h1>Regístrate</h1>
         <form onSubmit={handleSubmit}>
           <div className="form__item">
-            <label for="Name">Nombre</label>
+            <label>Nombre</label>
             <input
               type="text"
               name="name"
               required
               onChange={handleInputChange}
-              value = { inputs.name }
+              value={inputs.name}
             />
           </div>
           <div className="form__item">
-            <label for="Lastname">Apellido</label>
+            <label>Apellido</label>
             <input
               type="text"
               name="lastname"
               required
               onChange={handleInputChange}
-              value = { inputs.lastname }
+              value={inputs.lastname}
             />
           </div>
           <div className="form__item">
-            <label for="Farm">Nombre Finca</label>
+            <label>Nombre Finca</label>
             <input
               type="text"
               name="farmname"
               required
               onChange={handleInputChange}
-              value = { inputs.farmname }
+              value={inputs.farmname}
             />
           </div>
           <div className="form__item">
-            <label for="email">Correo Electrónico</label>
+            <label>Correo Electrónico</label>
             <input
               type="email"
-              name="email required "
+              name="email"
               required
               onChange={handleInputChange}
-              value = { inputs.email }
+              value={inputs.email}
             />
           </div>
           <div className="form__item">
-            <label for="password">contraseña</label>
+            <label>contraseña</label>
             <input
               type="password"
               name="password"
               required
               onChange={handleInputChange}
-              value = { inputs.password }
+              value={inputs.password}
             />
           </div>
           <div className="form__button">
-            <button>Registrarse</button>
+            <button type="submit">Registrarse</button>
           </div>
         </form>
         <div className="redirectSignIn">

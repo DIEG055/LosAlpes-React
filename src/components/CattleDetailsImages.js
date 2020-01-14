@@ -3,20 +3,17 @@ import "./Styles/cattleDetails.scss";
 
 function CattleDetailsImages(props) {
   return (
-    <div class="cattleImages">
-      <div class="cattleImage__container">
-        <img src="" alt="" />
+    <React.Fragment>
+      <div class="cattleImages">
+      {props.images.map((item, index) => {
+        return (
+            <div key={index} class="cattleImage__container">
+              <img src={item} alt={index} />
+            </div>
+        );
+      })}
       </div>
-      <div class="cattleImage__container">
-        <img src="" alt="" />
-      </div>
-      <div class="cattleImage__container">
-        <img src="" alt="" />
-      </div>
-      <div class="cattleImage__container">
-        <img src="" alt="" />
-      </div>
-    </div>
+    </React.Fragment>
   );
 }
 

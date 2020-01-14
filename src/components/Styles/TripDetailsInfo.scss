@@ -46,3 +46,50 @@
     font-family: $regular-font;
     }
 }
+
+.tripsDetails__Data{
+    grid-column: 5/10;
+    margin-top: 25px;
+}
+
+.tripDetails__amount{
+    grid-column: 6  /10;
+    align-self: center; 
+    margin: 0 35px;
+
+    background-color: $white;
+    height: 300px;
+    padding: 25px;
+    h5{
+        text-align: center;
+        font-family: $regular-font;
+        color: $font-color;
+        font-size: map-get($font-size, "small");
+        margin: 25px;
+
+    }
+}
+.tripDetails__amount__option{
+    display: flex;
+
+    justify-content: space-between;
+}
+.tripDetails__amount__selector{
+    display: flex;
+    justify-content: center;
+    input {
+        display: block;
+        width: 80px;
+        border-radius: $input-border-radious;
+        height: 45px;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 10px;
+        padding-left: 10px;
+        border: 1px solid $main-color;
+        font-family: $regular-font;
+      }
+      i{
+          padding-right: 25px;
+      }
+}

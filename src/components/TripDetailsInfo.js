@@ -38,6 +38,7 @@ function TripDetailsContainer(props) {
       <div class="form__button">
         <button>Eliminar</button>
         <button>Editar</button>
+        <button>Asignar ID's  </button>
       </div>
     </div>
   );

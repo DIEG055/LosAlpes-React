@@ -2,24 +2,31 @@ import React from "react";
 import "./Styles/forms.scss";
 
 function CattleFilter(props) {
+  const { inputs, handleInputChange, handleSubmit } = props;
+
   return (
-    <div class="tripsData__filter">
+    <div className="tripsData__filter">
       <h1>Filtrar</h1>
-      <form action="">
-        <div class="form__item">
-          <label for="date">Fecha</label>
-          <input type="date" />
+      <form onSubmit={handleSubmit}>
+        <div className="form__item">
+          <label>Fecha Nacimiento</label>
+          <input
+            type="date"
+            
+            onChange={handleInputChange}
+            value={inputs.date}
+            name="date"
+          />
         </div>
-        <div class="form__item">
-          <label for="type">Tipo</label>
-          <input type="text" />
-        </div>
-        <div class="form__item">
-          <label for="Dealer">Negociante</label>
-          <input type="text" />
+        <div className="form__item">
+          <label>Edad</label>
+          <input type="text"
+          onChange={handleInputChange}
+          value={inputs.age}
+          name="age"/>
         </div>
 
-        <div class="form__button__filter">
+        <div className="form__button__filter">
           <button>Buscar</button>
         </div>
       </form>

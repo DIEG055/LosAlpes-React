@@ -23,9 +23,10 @@ function App() {
         <Route exact path="/cattle" component={CattleList} />
         <Route exact path="/cattle/add" component={AddCattle} />
         <Route exact path="/cattle/:id" component={CattleDetails} />
-        <Route exact path="/trip" component={TripList} />
+        <Route exact path="/trips" component={TripList} />
         <Route exact path="/trips/add" component={CreateTrip} />
         <Route exact path="/trips/:id" component={TripDetails} />
+        <Route exact path="/trips/:id/details" component={Home} />
         {/* route doesn't match with any route */}
         <Route component={Home} />
       </Switch>

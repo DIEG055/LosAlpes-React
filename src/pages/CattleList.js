@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import MainLayout from "../components/MainLayout";
 import "./Styles/trips.scss";
 // import "./Styles/styles.scss";
@@ -7,13 +7,68 @@ import CattleTable from "../components/CattleTable";
 import CattleFilter from "../components/CattleFilter";
 
 function CattleList(props) {
+  const data = [
+    {
+      id: "1",
+      age: "1 año",
+      gender: "macho",
+      price: "1.400.000",
+      place: "Yopal",
+      state: "En Finca"
+    },
+    {
+      id: "1",
+      age: "1 año",
+      gender: "macho",
+      price: "1.400.000",
+      place: "Yopal",
+      state: "En Finca"
+    },
+    {
+      id: "1",
+      age: "1 año",
+      gender: "macho",
+      price: "1.400.000",
+      place: "Yopal",
+      state: "En Finca"
+    },
+    {
+      id: "1",
+      age: "1 año",
+      gender: "macho",
+      price: "1.400.000",
+      place: "Yopal",
+      state: "En Finca"
+    }
+  ];
+
+  const [inputs, setInputs] = useState({
+    date: "",
+    age: ""
+  });
+
+  const handleSubmit = event => {
+    if (event) {
+      event.preventDefault();
+    }
+    console.log(inputs);
+  };
+
+  const handleInputChange = event => {
+    event.persist();
+    setInputs(inputs => ({
+      ...inputs,
+      [event.target.name]: event.target.value
+    }));
+  };
+
   return (
     <MainLayout>
       <div className="container">
-        <div class="tripsTitle">
-          <div class="tripsTittle--position">
+        <div className="tripsTitle">
+          <div className="tripsTittle--position">
             <h1>Tus Ganado</h1>
-            <div class="newButton">
+            <div className="newButton">
               Nuevo
               <button>
                 <i>
@@ -24,9 +79,15 @@ function CattleList(props) {
           </div>
           <hr />
         </div>
-        <div class="tripsData">
-          <CattleTable></CattleTable>
-          <CattleFilter></CattleFilter>
+        <div className="tripsData">
+        <div className="tripsData__table">
+          <CattleTable data={data}></CattleTable>
+          </div>
+          <CattleFilter
+            inputs={inputs}
+            handleSubmit={handleSubmit}
+            handleInputChange={handleInputChange}
+          ></CattleFilter>
         </div>
       </div>
     </MainLayout>
