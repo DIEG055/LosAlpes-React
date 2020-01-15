@@ -2,34 +2,37 @@ import React from "react";
 import "./Styles/TripDetailsInfo.scss";
 
 function TripDetailsContainer(props) {
+  const data = props.data;
+  
   return (
+    
     <div className="tripDetails__container">
-      <h1>12/12/12</h1>
+      <h1>{data.date}</h1>
       <hr />
       <div className="tripDetails__info">
         <div>
           <h6>Fecha:</h6>
-          <p>12/12/12</p>
+          <p>{data.date}</p>
         </div>
         <div>
           <h6>Tipo:</h6>
-          <p>Venta</p>
+          <p>{data.type}</p>
         </div>
         <div>
           <h6>Comerciante:</h6>
-          <p>Juan Diego</p>
+          <p>{data.dealer}</p>
         </div>
         <div>
           <h6>Lugar:</h6>
-          <p>Sogamoso</p>
+          <p>{data.date}</p>
         </div>
         <div>
           <h6>Cantidad:</h6>
-          <p>14</p>
+          <p>{data.amound}</p>
         </div>
         <div>
           <h6>Valor:</h6>
-          <p>20.000.000</p>
+          <p>{data.price}</p>
         </div>
         <div className="tripDetails__cattleInfo">
           <a href="#"> Detalles</a>

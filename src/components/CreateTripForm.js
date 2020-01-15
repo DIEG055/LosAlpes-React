@@ -8,7 +8,7 @@ function CreateTripForm(props) {
   const { register, handleSubmit, errors, onSubmit } = props;
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <form onSubmit={  handleSubmit(onSubmit)}>
       <div className="form__item">
         <label>Fecha</label>
         <input type="date" name="date" ref={register({ required: true })} />
@@ -43,15 +43,15 @@ function CreateTripForm(props) {
       <div className="tripDetails__amount__option">
         <div className="tripDetails__amount__selector">
           <i>
-            <img src= { male } alt="" name="amountMale" ref={register({ required: true })} />
+            <img src= { male } alt=""   />
           </i>
-          <input type="text" />
+          <input type="text" name="amountMale"ref={register({ required: true })}/>
         </div>
         <div className="tripDetails__amount__selector">
           <i>
-            <img src= { female } alt="" name="amountFemale" ref={register({ required: true })} />
+            <img src= { female } alt=""  />
           </i>
-          <input type="text" />
+          <input type="text" name="amountFemale" ref={register({ required: true })}/>
         </div>
       </div>
       

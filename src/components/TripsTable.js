@@ -27,7 +27,7 @@ function TripsTable(props) {
         <tbody>
         {console.log(props.data)
         }
-        {props.data.map((item, index) => {
+        {props.data.trips.map((item, index) => {
           return (
               <tr key={index}>
                 <td className="table__header--borderLeft">{item.date}</td>
@@ -43,7 +43,7 @@ function TripsTable(props) {
                 </td>
                 <td className="table__header--borderRight">
                   <div className="detailsButton">
-                    <Link to={`trips/${item.id}`}>
+                    <Link to={`trips/${item.date}`}>
                       <button>Ver</button>
                     </Link>
                   </div>
