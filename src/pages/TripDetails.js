@@ -5,7 +5,19 @@ import TripDetailsInfo from "../components/TripDetailsInfo";
 import "./Styles/tripDetails.scss";
 import TripDetailsTable from "../components/TripDetailsTable";
 
-function TripDetails(props) {
+import { useSelector, useDispatch } from 'react-redux'
+import { increment, decrement } from '../redux/actions/counter'
+
+function TripDetails() {
+
+  const tableData = useSelector( state => {
+    console.log(state.counter);
+    
+  })
+
+  const dispatch = useDispatch();
+  dispatch(increment);
+
   return (
     <MainLayout>
       <div class="tripDetails">
