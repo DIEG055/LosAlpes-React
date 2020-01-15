@@ -4,7 +4,7 @@ import "./Styles/cattleDetails.scss";
 function CattleDetailsImages(props) {
   return (
     <React.Fragment>
-      <div class="cattleImages">
+      <div className="cattleImages">
       {props.images.map((item, index) => {
         return (
             <div key={index} class="cattleImage__container">

@@ -7,10 +7,10 @@ function CattleDetailsInfo(props) {
   const data = props.data;
 
   return (
-    <div class="tripDetails__container">
+    <div className="tripDetails__container">
       <h1># 141</h1>
       <hr />
-      <div class="cattleDetails__info">
+      <div className="cattleDetails__info">
         <div>
           <h6>ID:</h6>
           <p>{data.id}</p>
@@ -49,7 +49,7 @@ function CattleDetailsInfo(props) {
             <p>{data.state}</p>
           </div>
         </div>
-        <div class="confirmButton">
+        <div className="confirmButton">
           <button>Editar</button>
         </div>
       </div>

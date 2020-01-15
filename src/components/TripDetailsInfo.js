@@ -3,10 +3,10 @@ import "./Styles/TripDetailsInfo.scss";
 
 function TripDetailsContainer(props) {
   return (
-    <div class="tripDetails__container">
+    <div className="tripDetails__container">
       <h1>12/12/12</h1>
       <hr />
-      <div class="tripDetails__info">
+      <div className="tripDetails__info">
         <div>
           <h6>Fecha:</h6>
           <p>12/12/12</p>
@@ -31,11 +31,11 @@ function TripDetailsContainer(props) {
           <h6>Valor:</h6>
           <p>20.000.000</p>
         </div>
-        <div class="tripDetails__cattleInfo">
+        <div className="tripDetails__cattleInfo">
           <a href="#"> Detalles</a>
         </div>
       </div>
-      <div class="form__button">
+      <div className="form__button">
         <button>Eliminar</button>
         <button>Editar</button>
         <button>Asignar ID's  </button>

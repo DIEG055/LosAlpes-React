@@ -8,6 +8,7 @@ import complete from "../static/images/svgs/Complete.svg";
 import uncomplete from "../static/images/svgs/Uncomplete.svg";
 
 function TripsTable(props) {
+  
   return (
     <div className="tripsData__table">
       <table>
@@ -24,8 +25,10 @@ function TripsTable(props) {
           </tr>
         </thead>
         <tbody>
-          {props.data.map((item, index) => {
-            return (
+        {console.log(props.data)
+        }
+        {props.data.map((item, index) => {
+          return (
               <tr key={index}>
                 <td className="table__header--borderLeft">{item.date}</td>
                 <td>{item.type}</td>
@@ -39,16 +42,15 @@ function TripsTable(props) {
                   </i>
                 </td>
                 <td className="table__header--borderRight">
-                <div className="detailsButton">
-                    <Link to={ `trips/${item.id}` }>
-                    <button>Ver</button>
+                  <div className="detailsButton">
+                    <Link to={`trips/${item.id}`}>
+                      <button>Ver</button>
                     </Link>
-                    
                   </div>
                 </td>
               </tr>
-            );
-          })}
+          );
+        })}
         </tbody>
       </table>
     </div>

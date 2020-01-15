@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect , useCallback } from "react";
 import MainLayout from "../components/MainLayout";
 import "./Styles/trips.scss";
 // import "./Styles/styles.scss";
@@ -6,45 +6,21 @@ import newButton from "../static/images/svgs/New.svg";
 import TripsTable from "../components/TripsTable";
 import TripsFilter from "../components/TripsFilter";
 
+import { useSelector, useDispatch } from 'react-redux'
+import { getTrips } from '../redux/actions/trips'
+
 const TripList = () => {
-  const trips = [
-    {
-      date: "hola",
-      type: "compra",
-      dealer: "persona",
-      place: "Yopal",
-      amount: "14",
-      price: "14.000.000",
-      ids: false
-    },
-    {
-      date: "hola",
-      type: "compra",
-      dealer: "persona",
-      place: "Yopal",
-      amount: "14",
-      price: "14.000.000",
-      ids: true
-    },
-    {
-      date: "hola",
-      type: "compra",
-      dealer: "persona",
-      place: "Yopal",
-      amount: "14",
-      price: "14.000.000",
-      ids: false
-    },
-    {
-      date: "hola",
-      type: "compra",
-      dealer: "persona",
-      place: "Yopal",
-      amount: "14",
-      price: "14.000.000",
-      ids: false
-    }
-  ];
+  
+  const trips = useSelector( state => state.trips);
+  //lanza la accion cuando ocurre algun evento, el dispatch se deve poner donde ocurra el evento  
+  const dispatch = useDispatch();
+
+  // useEffect( () => {
+  //   dispatch(getTrips());
+  // })
+
+
+
 
   const [inputs, setInputs] = useState({
     date: "",
@@ -85,7 +61,7 @@ const TripList = () => {
           <hr />
         </div>
         <div className="tripsData">
-          <TripsTable data={trips}></TripsTable>
+          <TripsTable data={trips || []}></TripsTable>
           <TripsFilter
             inputs={inputs}
             handleSubmit={handleSubmit}
@@ -96,5 +72,7 @@ const TripList = () => {
     </MainLayout>
   );
 };
+
+
 
 export default TripList;
