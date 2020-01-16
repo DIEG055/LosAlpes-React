@@ -19,11 +19,7 @@ function CreateTripForm(props) {
         <input type="text" name="type" ref={register({ required: true })} />
          {/* {errors.type && <spa n>This field is required</span>}  */}
       </div>
-      <div className="form__item">
-        <label>Cantidad</label>
-        <input type="text" name="amount" ref={register({ required: true, min: 0 })} />
-        {/* {errors.amount && <span>This field is required</span>} */}
-      </div>
+     
       <div className="form__item">
         <label>Negociante</label>
         <input type="text" name="dealer" ref={register({ required: true })} />
@@ -34,11 +30,18 @@ function CreateTripForm(props) {
         <input type="text" name="place" ref={register({ required: true })} />
         {/* {errors.place && <span>This field is required</span>} */}
       </div>
-      <div className="form__item">
-        <label>Precio</label>
-        <input type="text" name="price" ref={register({ required: true })} />
-        {/* {errors.price && <span>This field is required</span>} */}
-      </div>
+     <div className="form--twocolumns" >
+        <div className="form__item">
+          <label>Precio</label>
+          <input type="text" name="price" ref={register({ required: true })} />
+          {/* {errors.price && <span>This field is required</span>} */}
+        </div>
+        <div className="form__item">
+          <label>Cantidad</label>
+          <input type="text" name="amount" ref={register({ required: true, min: 0 })} />
+          {/* {errors.amount && <span>This field is required</span>} */}
+        </div>
+     </div>
       <div className="form__item"><label>Cantidad Machos y Hembras</label></div>
       <div className="tripDetails__amount__option">
         <div className="tripDetails__amount__selector">

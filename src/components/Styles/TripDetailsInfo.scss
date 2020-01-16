@@ -6,6 +6,7 @@
     @extend .signUp__container;
     grid-column: 1/4;
     grid-row: 1 / -1;
+    padding-top: $navbar-height;
     h1{
         padding-top: 25px;
         margin: 0;
@@ -49,6 +50,7 @@
 
 .tripsDetails__Data{
     grid-column: 5/10;
+    grid-row: 2;
     margin-top: 25px;
 }
 

@@ -6,15 +6,19 @@ import "./Styles/tripDetails.scss";
 import TripDetailsTable from "../components/TripDetailsTable";
 import { useSelector, useDispatch } from 'react-redux'
 import { getTrip } from '../redux/actions/trips'
+import { getCattlesByTrip } from '../redux/actions/cattle'
 
 function TripDetails(props) {
 
   const trip = useSelector( state => state.trips.trip);
+  const cattle = useSelector( state => state.cattle.cattlesByTrip);
   const dispatch = useDispatch();
+  const id = props.match.params.id;  
 
   useEffect( () => {
-    const date = props.match.params.id;  
-    dispatch(getTrip(date))
+    const id = props.match.params.id;  
+    dispatch(getTrip(id))
+    dispatch(getCattlesByTrip(id))
   })
 
   return (
@@ -22,7 +26,7 @@ function TripDetails(props) {
       <div className="tripDetails">
         <TripDetailsInfo data= { trip }></TripDetailsInfo>
         <div className="tripsDetails__Data">
-          <TripDetailsTable></TripDetailsTable>
+          <TripDetailsTable cattle = { cattle || [] } id={id}></TripDetailsTable>
         </div>
       </div>
     </MainLayout>

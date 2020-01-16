@@ -3,6 +3,12 @@
 body {
     margin: 0;
   }
+
+  .emptybox{
+    height: $navbar-height;
+    width: 100%;
+
+  }
   //........................................................
   //   Backgrounds
   .loginBackground {
@@ -64,6 +70,7 @@ body {
   //........................................................
   .container {
     margin: 0 150px;
-    margin-top: $navbar-height;
+    // margin-top: $navbar-height;
+    padding-top: $navbar-height;
   
   }

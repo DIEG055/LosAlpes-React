@@ -6,41 +6,10 @@ import newButton from "../static/images/svgs/New.svg";
 import CattleTable from "../components/CattleTable";
 import CattleFilter from "../components/CattleFilter";
 
+
+import { useSelector } from 'react-redux'
 function CattleList(props) {
-  const data = [
-    {
-      id: "1",
-      age: "1 año",
-      gender: "macho",
-      price: "1.400.000",
-      place: "Yopal",
-      state: "En Finca"
-    },
-    {
-      id: "1",
-      age: "1 año",
-      gender: "macho",
-      price: "1.400.000",
-      place: "Yopal",
-      state: "En Finca"
-    },
-    {
-      id: "1",
-      age: "1 año",
-      gender: "macho",
-      price: "1.400.000",
-      place: "Yopal",
-      state: "En Finca"
-    },
-    {
-      id: "1",
-      age: "1 año",
-      gender: "macho",
-      price: "1.400.000",
-      place: "Yopal",
-      state: "En Finca"
-    }
-  ];
+  const data = useSelector ( state => state.cattle )
 
   const [inputs, setInputs] = useState({
     date: "",
@@ -81,7 +50,7 @@ function CattleList(props) {
         </div>
         <div className="tripsData">
         <div className="tripsData__table">
-          <CattleTable data={data}></CattleTable>
+          <CattleTable data={data.cattles }></CattleTable>
           </div>
           <CattleFilter
             inputs={inputs}

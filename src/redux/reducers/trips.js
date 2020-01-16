@@ -1,6 +1,7 @@
 const INITIAL_STATE = {
   trips: [
     {
+      id: '1',
       date: "01-01-19",
       type: "compra",
       dealer: "persona",
@@ -10,6 +11,7 @@ const INITIAL_STATE = {
       ids: false
     },
     {
+      id: '2',
       date: "02-02-19",
       type: "compra",
       dealer: "persona",
@@ -19,6 +21,7 @@ const INITIAL_STATE = {
       ids: true
     },
     {
+      id: '3',
       date: "03-03-19",
       type: "compra",
       dealer: "persona",
@@ -28,6 +31,7 @@ const INITIAL_STATE = {
       ids: false
     },
     {
+      id: '4',
       date: "04-04-19",
       type: "compra",
       dealer: "persona",
@@ -38,6 +42,7 @@ const INITIAL_STATE = {
     }
   ],
   trip: {
+    id: '',
     date: "",
     type: "",
     dealer: "",
@@ -62,17 +67,18 @@ export default (state = INITIAL_STATE, action) => {
     case "GET_TRIP":
       return {
         ...state,
-        trip: state.trips.find(trip => trip.date === action.payload)
+        trip: state.trips.find(trip => trip.id === action.payload)
       };
 
     case "EDIT_TRIP":
       state.trips[
-        state.trips.findIndex(el => el.date === action.payload.date)
+        //revisar que se quito el action.payload.date
+        state.trips.findIndex(el => el.id === action.payload)
       ] = action.payload;
       return state;
       
     case "DELETE_TRIP":
-      state.trips = state.trips.filter(item => item.date !== action.payload);
+      state.trips = state.trips.filter(item => item.id !== action.payload);
       return state;
     default:
       return state;

@@ -43,7 +43,7 @@ function TripsTable(props) {
                 </td>
                 <td className="table__header--borderRight">
                   <div className="detailsButton">
-                    <Link to={`trips/${item.date}`}>
+                    <Link to={`trips/${item.id}`}>
                       <button>Ver</button>
                     </Link>
                   </div>

@@ -7,7 +7,7 @@ function CattleDetailsImages(props) {
       <div className="cattleImages">
       {props.images.map((item, index) => {
         return (
-            <div key={index} class="cattleImage__container">
+            <div key={index} className="cattleImage__container">
               <img src={item} alt={index} />
             </div>
         );

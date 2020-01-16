@@ -6,6 +6,7 @@ import "./Styles/trips.scss";
 import "./Styles/buttons.scss";
 
 function CattleTable(props) {
+
   return (
     
       <table>
@@ -17,7 +18,7 @@ function CattleTable(props) {
             <th>Valor Compra</th>
             <th>Procedencia</th>
             <th>Estado</th>
-            <th>Detalles</th>
+            <th>Detalles</th> 
           </tr>
         </thead>
         <tbody>
@@ -28,12 +29,12 @@ function CattleTable(props) {
                 <td>{item.age}</td>
                 <td>{item.gender}</td>
                 {/* <td>{item.gender}</td> */}
-                <td>{item.price}</td>
-                <td>{item.place}</td>
+                <td>{item.purchaseValue}</td>
+                <td>{item.origin}</td>
                 <td>{item.state}</td>
                 <td className="table__header--borderRight">
                   <div className="detailsButton">
-                    <Link to={ `cattle/${item.id}` }>
+                    <Link to={ `/cattle/${item.id}` }>
                     <button>Ver</button>
                     </Link>
                     

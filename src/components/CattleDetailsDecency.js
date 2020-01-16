@@ -5,8 +5,8 @@ import CattleTable from "./CattleTable"
 
 function CattleDetailsDecency (props) {
     return (
-        <div class="cattleDetails__Data">
-        <div class="cattleDecencyData__table">
+        <div className="cattleDetails__Data">
+        <div className="cattleDecencyData__table">
           <h3>Descendencia</h3>
           <CattleTable data={props.data}></CattleTable> </div>
       </div>
