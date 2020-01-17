@@ -6,10 +6,8 @@ function TripDetailsContainer(props) {
   
   return (
     
-    <div className="tripDetails__container">
-      <h1>{data.date}</h1>
-      <hr />
-      <div className="tripDetails__info">
+   <React.Fragment>
+        <div className="tripDetails__info">
         <div>
           <h6>Fecha:</h6>
           <p>{data.date}</p>
@@ -39,11 +37,15 @@ function TripDetailsContainer(props) {
         </div>
       </div>
       <div className="form__button">
-        <button>Eliminar</button>
-        <button>Editar</button>
+        <button onClick={props.onOpenModal}  >Eliminar</button>
+        <button onClick = {props.onActiveEdit}>Editar</button>
         <button> ID's  </button>
       </div>
-    </div>
+   </React.Fragment>
+    
+   
+  
+
   );
 }
 

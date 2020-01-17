@@ -32,16 +32,17 @@ export const getCattle = (id) => {
     }
 }
 
-export const editCattle = (id) => {
+export const editCattle = (cattle) => {
+    
     return {
-            type: "EDIT_CATTlE",
-            payload: id
+            type: "EDIT_CATTLE",
+            payload: cattle
     }
 }
 
-export const deleteTrip = (id) => {
+export const deleteCattle = (id) => {
     return {
-            type: "DELETE_TRIP",
+            type: "DELETE_CATTLE",
             payload: id
     }
 }

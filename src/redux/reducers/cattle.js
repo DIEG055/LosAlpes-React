@@ -1,75 +1,83 @@
 const INITIAL_STATE = {
-  cattles:[
+  cattles: [
     {
-       id:'1',
-        arrivalDate: "12/12/19",
-        mom: '0',
-        departureDate: "12/12/19",
-        birthDate: "01/01/20",
-        age: "2 año",
-        gender: "hembra",
-        origin: "Mongua",
-        purchaseValue: "1.500.000",
-        saleValue: "1.500.000",
-        state: "En Finca",
-        tripId: '1',
-        images: ['https://images.unsplash.com/photo-1542894956-c07e23120074?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
-        'https://images.unsplash.com/photo-1542894956-c07e23120074?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80'
-        ]},
+      id: "1",
+      arrivalDate: "2019-12-12",
+      mom: "0",
+      departureDate: "2019-12-12",
+      birthDate: "2020-01-01",
+      age: "2 año",
+      gender: "hembra",
+      origin: "Mongua",
+      purchaseValue: "1.500.000",
+      saleValue: "1.500.000",
+      state: "En Finca",
+      tripId: "1",
+      images: [
+        "https://images.unsplash.com/photo-1542894956-c07e23120074?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
+        "https://images.unsplash.com/photo-1542894956-c07e23120074?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+      ]
+    },
     {
-       id:'2',
-        arrivalDate: "12/12/19",
-        mom: '1',
-        departureDate: "12/12/19",
-        birthDate: "01/01/20",
-        age: "12 año",
-        gender: "hembra",
-        origin: "Mongua",
-        purchaseValue: "1.500.000",
-        saleValue: "1.500.000",
-        state: "En Finca",
-        tripId: '1',
-        images: ['https://images.unsplash.com/photo-1542894956-c07e23120074?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
-        'https://images.unsplash.com/photo-1542894956-c07e23120074?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80'
-        ]},
+      id: "2",
+      arrivalDate: "2019-12-12",
+      mom: "1",
+      departureDate: "2019-12-12",
+      birthDate: "2020-01-01",
+      age: "12 año",
+      gender: "hembra",
+      origin: "Mongua",
+      purchaseValue: "1.500.000",
+      saleValue: "1.500.000",
+      state: "En Finca",
+      tripId: "1",
+      images: [
+        "https://images.unsplash.com/photo-1542894956-c07e23120074?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
+        "https://images.unsplash.com/photo-1542894956-c07e23120074?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+      ]
+    },
     {
-       id:'3',
-        arrivalDate: "12/12/19",
-        mom: '2',
-        departureDate: "12/12/19",
-        birthDate: "01/01/20",
-        age: "13 año",
-        gender: "hembra",
-        origin: "Mongua",
-        purchaseValue: "1.500.000",
-        saleValue: "1.500.000",
-        state: "En Finca",
-        tripId: '1',
-        images: ['https://images.unsplash.com/photo-1542894956-c07e23120074?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
-        'https://images.unsplash.com/photo-1542894956-c07e23120074?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80'
-        ]},
+      id: "3",
+      arrivalDate: "2019-12-12",
+      mom: "2",
+      departureDate: "2019-12-12",
+      birthDate: "2020-01-01",
+      age: "13 año",
+      gender: "hembra",
+      origin: "Mongua",
+      purchaseValue: "1.500.000",
+      saleValue: "1.500.000",
+      state: "En Finca",
+      tripId: "1",
+      images: [
+        "https://images.unsplash.com/photo-1542894956-c07e23120074?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
+        "https://images.unsplash.com/photo-1542894956-c07e23120074?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+      ]
+    },
     {
-       id:'4',
-        arrivalDate: "12/12/19",
-        mom: '1',
-        departureDate: "12/12/19",
-        birthDate: "01/01/20",
-        age: "14 año",
-        gender: "hembra",
-        origin: "Mongua",
-        purchaseValue: "1.500.000",
-        saleValue: "1.500.000",
-        state: "En Finca",
-        tripId: '2',
-        images: ['https://images.unsplash.com/photo-1542894956-c07e23120074?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
-        'https://images.unsplash.com/photo-1542894956-c07e23120074?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80'
-        ] }
+      id: "4",
+      arrivalDate: "2019-12-12",
+      mom: "1",
+      departureDate: "2019-12-12",
+      birthDate: "2020-01-01",
+      age: "14 año",
+      gender: "hembra",
+      origin: "Mongua",
+      purchaseValue: "1.500.000",
+      saleValue: "1.500.000",
+      state: "En Finca",
+      tripId: "2",
+      images: [
+        "https://images.unsplash.com/photo-1542894956-c07e23120074?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
+        "https://images.unsplash.com/photo-1542894956-c07e23120074?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+      ]
+    }
   ],
   cattlesByMom: [],
   cattle: {
-    id:'',
+    id: "",
     arrivalDate: "",
-    mom: '',
+    mom: "",
     departureDate: "",
     birthDate: "",
     age: "",
@@ -78,14 +86,12 @@ const INITIAL_STATE = {
     purchaseValue: "",
     saleValue: "",
     state: "",
-    tripId: '',
+    tripId: "",
     images: []
   }
 };
 
 export default (state = INITIAL_STATE, action) => {
-
-  
   switch (action.type) {
     case "GET_CATTLES":
       return {
@@ -93,7 +99,6 @@ export default (state = INITIAL_STATE, action) => {
         users: action.payload
       };
     case "GET_CATTlES_BY_MOTHER":
-      
       // let children = state.cattles;
       // children = children.filter(item => item.mom === action.payload)
       return {
@@ -101,7 +106,6 @@ export default (state = INITIAL_STATE, action) => {
         cattlesByMom: state.cattles
       };
     case "GET_CATTLES_BY_TRIP":
-
       return {
         ...state,
         cattlesByTrip: state.cattles
@@ -118,7 +122,7 @@ export default (state = INITIAL_STATE, action) => {
       //     }
       //   ]
       state.cattles.push(action.payload);
-      return {state};
+      return { state };
 
     case "GET_CATTLE":
       return {
@@ -127,11 +131,12 @@ export default (state = INITIAL_STATE, action) => {
       };
 
     case "EDIT_CATTLE":
-      state.cattles[
-        state.cattles.findIndex(el => el.id === action.payload)
-      ] = action.payload;
-      return state;
       
+       
+      state.cattles[state.cattles.findIndex(el => el.id === action.payload.id)] =
+        action.payload;
+      return state
+
     case "DELETE_CATTLE":
       state.cattles = state.cattles.filter(item => item.id !== action.payload);
       return state;

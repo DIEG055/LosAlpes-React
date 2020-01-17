@@ -8,6 +8,7 @@ import AddCattle from "../pages/AddCattle";
 import CattleDetails from "../pages/CattleDetails";
 import CattleList from "../pages/CattleList";
 import CreateTrip from "../pages/CreateTrip";
+import EditCattle from "../pages/EditCattle";
 import TripList from "../pages/TripList";
 import TripDetails from "../pages/TripDetails";
 
@@ -23,6 +24,7 @@ const routes = () => {
           <Route exact path="/cattle" component={CattleList} />
           <Route exact path="/cattle/add" component={AddCattle} />
           <Route exact path="/cattle/:id" replace component={CattleDetails} />
+          <Route exact path="/cattle/:id/edit" replace component={EditCattle} />
           <Route exact path="/trips" component={TripList} />
           <Route exact path="/trips/add" component={CreateTrip} />
           <Route exact path="/trips/:id" component={TripDetails} />

@@ -2,14 +2,13 @@ import React from "react";
 import "./Styles/buttons.scss";
 import "./Styles/cattleDetails.scss";
 import "./Styles/TripDetailsInfo.scss";
+import { Link } from "react-router-dom";
 
 function CattleDetailsInfo(props) {
   const data = props.data;
 
   return (
-    <div className="tripDetails__container">
-      <h1># 141</h1>
-      <hr />
+
       <div className="cattleDetails__info">
         <div>
           <h6>ID:</h6>
@@ -50,10 +49,13 @@ function CattleDetailsInfo(props) {
           </div>
         </div>
         <div className="confirmButton">
-          <button>Editar</button>
+          {/* <Link to={`/cattle/${data.id}/edit`}> */}
+            <button onClick = {props.onActiveEdit}>Edit</button>
+          {/* </Link> */}
+          <button onClick={props.onOpenModal}>Eliminar</button>
         </div>
       </div>
-    </div>
+
   );
 }
 

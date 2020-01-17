@@ -2,7 +2,7 @@ const INITIAL_STATE = {
   trips: [
     {
       id: '1',
-      date: "01-01-19",
+      date: "2019-01-01",
       type: "compra",
       dealer: "persona",
       place: "Yopal",
@@ -12,7 +12,7 @@ const INITIAL_STATE = {
     },
     {
       id: '2',
-      date: "02-02-19",
+      date: "2019-02-02",
       type: "compra",
       dealer: "persona",
       place: "Yopal",
@@ -22,7 +22,7 @@ const INITIAL_STATE = {
     },
     {
       id: '3',
-      date: "03-03-19",
+      date: "2019-03-03",
       type: "compra",
       dealer: "persona",
       place: "Yopal",
@@ -32,7 +32,7 @@ const INITIAL_STATE = {
     },
     {
       id: '4',
-      date: "04-04-19",
+      date: "2019-04-04",
       type: "compra",
       dealer: "persona",
       place: "Yopal",
@@ -70,10 +70,9 @@ export default (state = INITIAL_STATE, action) => {
         trip: state.trips.find(trip => trip.id === action.payload)
       };
 
-    case "EDIT_TRIP":
+    case "EDIT_TRIP":      
       state.trips[
-        //revisar que se quito el action.payload.date
-        state.trips.findIndex(el => el.id === action.payload)
+        state.trips.findIndex(el => el.id === action.payload.id)
       ] = action.payload;
       return state;
       
